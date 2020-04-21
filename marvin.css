@@ -1,0 +1,74 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.yay{
+	display: block;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	top: 2%;
+	font-weight: bold;
+	font-size: 200%;
+	color: #019498;
+	animation-name: yeet;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.marvin{
+	display: block;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url("marvin.png");
+	width: 50%;
+	height: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation-name: marviiin;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes marviiin{
+	25%{
+		transform: rotate(20deg) scale(1.5,1.5) translateX(20%);
+	}
+
+	50%{
+		transform: rotate(0) scale(1,1) translateX(0);
+	}
+
+	75%{
+		transform: rotate(-20deg) scale(1.5,1.5) translateX(-20%);
+	}
+}
+
+@keyframes yeet{
+	10%{
+		color: blue;
+	}
+	20%{
+		color: green;
+	}
+	30%{
+		color: purple;
+	}
+	40%{
+		color: yellow;
+	}
+	50%{
+		color: red;
+		font-size: 150%;
+	}
+}
